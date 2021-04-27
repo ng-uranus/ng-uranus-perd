@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-uranus-perd": [
+        "dist/ng-uranus-perd-lib"
+      ],
+      "ng-uranus-perd/*": [
+        "dist/ng-uranus-perd-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
