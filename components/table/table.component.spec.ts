@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgUranusPerdComponent } from './ng-uranus-perd.component';
+import { TableComponent } from './table.component';
 
-describe('NgUranusPerdLibComponent', () => {
-  let component: NgUranusPerdComponent;
-  let fixture: ComponentFixture<NgUranusPerdComponent>;
+describe('TableComponent', () => {
+  let component: TableComponent;
+  let fixture: ComponentFixture<TableComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgUranusPerdComponent ]
+      declarations: [ TableComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgUranusPerdComponent);
+    fixture = TestBed.createComponent(TableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

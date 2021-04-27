@@ -130,6 +130,11 @@
       "root": "components",
       "sourceRoot": "components",
       "prefix": "nu",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "less"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
