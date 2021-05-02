@@ -7,7 +7,7 @@
           [nzWidth]="column.width"
           [ngStyle]="column.style ? column.style : {}"
           [nzShowSort]="column.sortable"
-          [nzSortKey]="column.key"
+          [nzColumnKey]="column.key"
           (nzSortChange)="thSort(column.key, $event)">
             {{column.name}}
         </th>

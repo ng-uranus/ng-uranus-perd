@@ -25,7 +25,8 @@
       "ng-uranus-perd/*": [
         "dist/ng-uranus-perd-lib/*"
       ]
-    }
+    },
+    "types": ["jasmine"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
