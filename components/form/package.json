@@ -1,0 +1,17 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts",
+      "umdModuleIds": {
+        "@ngx-formly/core": "@ngx-formly/core",
+        "@ngx-formly/core/select": "@ngx-formly/core/select",
+        "ng-zorro-antd/input": "ng-zorro-antd/input",
+        "ng-zorro-antd/input-number": "ng-zorro-antd/input-number",
+        "ng-zorro-antd/checkbox": "ng-zorro-antd/checkbox",
+        "ng-zorro-antd/select": "ng-zorro-antd/select",
+        "ng-zorro-antd/radio": "ng-zorro-antd/radio",
+        "ng-zorro-antd/form": "ng-zorro-antd/form"
+      }
+    }
+  }
+}

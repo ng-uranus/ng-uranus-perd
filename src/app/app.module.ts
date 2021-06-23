@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NuTableModule } from 'ng-uranus-perd/table';
+import { NuFormModule } from 'ng-uranus-perd/form';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     NuTableModule,
+    NuFormModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
