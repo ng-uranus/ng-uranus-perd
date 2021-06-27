@@ -11,6 +11,8 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzSwitchModule } from 'ng-zorro-antd/switch';
+import { NzSliderModule } from 'ng-zorro-antd/slider';
 
 import { FormlyWrapperFormFieldComponent } from './wrappers/wrapper-form-field.component';
 import { FormlyFieldCheckboxComponent } from './types/checkbox.component';
@@ -18,6 +20,8 @@ import { FormlyFieldInputComponent } from './types/input.component';
 import { FormlyFieldSelectComponent } from './types/select.component';
 import { FormlyFieldTextareaComponent } from './types/textarea-component';
 import { FormlyFieldRadioComponent } from './types/radio.component';
+import { FormlyFieldSwitchComponent } from './types/switch.component';
+import { FormlyFieldSliderComponent } from './types/slider.component';
 
 const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldCheckboxComponent,
@@ -25,6 +29,8 @@ const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldSelectComponent,
   FormlyFieldTextareaComponent,
   FormlyFieldRadioComponent,
+  FormlyFieldSwitchComponent,
+  FormlyFieldSliderComponent,
 ];
 
 const NG_ZORRO_MODULES = [
@@ -33,6 +39,8 @@ const NG_ZORRO_MODULES = [
   NzInputNumberModule,
   NzCheckboxModule,
   NzRadioModule,
+  NzSwitchModule,
+  NzSliderModule,
 ];
 
 const NG_ZORRO_FORMLY_CONFIG = {
@@ -42,6 +50,8 @@ const NG_ZORRO_FORMLY_CONFIG = {
     { name: 'input', component: FormlyFieldInputComponent, wrappers: ['form-field'] },
     { name: 'textarea', component: FormlyFieldTextareaComponent, wrappers: ['form-field'] },
     { name: 'radio', component: FormlyFieldRadioComponent, wrappers: ['form-field'] },
+    { name: 'switch', component: FormlyFieldSwitchComponent, wrappers: ['form-field'] },
+    { name: 'slider', component: FormlyFieldSliderComponent, wrappers: ['form-field'] },
   ],
   wrappers: [
     { name: 'form-field', component: FormlyWrapperFormFieldComponent },

@@ -10,7 +10,9 @@
         "ng-zorro-antd/checkbox": "ng-zorro-antd/checkbox",
         "ng-zorro-antd/select": "ng-zorro-antd/select",
         "ng-zorro-antd/radio": "ng-zorro-antd/radio",
-        "ng-zorro-antd/form": "ng-zorro-antd/form"
+        "ng-zorro-antd/form": "ng-zorro-antd/form",
+        "ng-zorro-antd/switch": "ng-zorro-antd/switch",
+        "ng-zorro-antd/slider": "ng-zorro-antd/slider"
       }
     }
   }

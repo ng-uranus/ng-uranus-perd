@@ -11,7 +11,7 @@ import { FieldType } from '@ngx-formly/core';
       *ngIf="to.type !== 'number'; else numberTmp"
       nz-input
       [formControl]="formControl"
-      [type]="to.type || 'text'"
+      [type]="type"
       [formlyAttributes]="field"
       [class.ng-dirty]="showError"
       [nzSize]="nzSize"
@@ -27,6 +27,10 @@ import { FieldType } from '@ngx-formly/core';
   `,
 })
 export class FormlyFieldInputComponent extends FieldType {
+  get type() {
+    return this.to.type || 'text';
+  }
+
   get nzSize() {
     return this.to!.nzSize || 'default';
   }

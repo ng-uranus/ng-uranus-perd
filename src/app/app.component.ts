@@ -109,6 +109,21 @@ export class AppComponent {
           value: 'bb',
         }
       ],
+    },
+  },
+  {
+    key: 'switch',
+    type: 'switch',
+    templateOptions: {
+      label: 'Switch',
     }
-  }];
+  },
+  {
+    key: 'slider',
+    type: 'slider',
+    templateOptions: {
+      label: 'Slider',
+    }
+  },
+  ];
 }
