@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
 import { FieldType } from '@ngx-formly/core';
 
 @Component({
-  selector: 'formly-field-switch',
+  selector: 'nu-formly-field-switch',
   preserveWhitespaces: false,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,

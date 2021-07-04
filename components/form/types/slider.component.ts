@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
 import { FieldType } from '@ngx-formly/core';
 
 @Component({
-  selector: 'formly-field-slider',
+  selector: 'nu-formly-field-slider',
   preserveWhitespaces: false,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,

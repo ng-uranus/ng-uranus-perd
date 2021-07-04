@@ -7,31 +7,22 @@ import { FieldType } from '@ngx-formly/core';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <label
-      nz-checkbox
-      [class.ng-dirty]="showError"
-      [formControl]="formControl"
-      [formlyAttributes]="field"
-      [nzAutoFocus]="nzAutoFocus"
-      [nzDisabled]="nzDisabled"
-      [nzIndeterminate]="to.nzIndeterminate && formControl.value == null">
-        {{ to.label }}
-    </label>
+    <nz-form-control>
+      <label
+        nz-checkbox
+        [formlyAttributes]="field"
+        [formControl]="formControl"
+        [nzAutoFocus]="nzAutoFocus"
+        *ngFor="let option of to.options | formlySelectOptions: field | async"
+        [nzDisabled]="option.disabled"
+        [nzValue]="option.value">
+          {{ option.label }}
+      </label>
+    </nz-form-control>
   `,
 })
 export class FormlyFieldCheckboxComponent extends FieldType {
-  defaultOptions = {
-    templateOptions: {
-      nzIndeterminate: true,
-      hideLabel: true,
-    },
-  };
-
   get nzAutoFocus(): boolean {
     return this.to!.nzAutoFocus || false;
-  }
-
-  get nzDisabled(): boolean {
-    return this.to!.nzDisabled || false;
   }
 }

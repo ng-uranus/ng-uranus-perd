@@ -13,15 +13,20 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzSliderModule } from 'ng-zorro-antd/slider';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
 import { FormlyWrapperFormFieldComponent } from './wrappers/wrapper-form-field.component';
+import { FormlyWrapperFormFieldVerticalComponent } from './wrappers/wrapper-form-field-vertical.component';
 import { FormlyFieldCheckboxComponent } from './types/checkbox.component';
 import { FormlyFieldInputComponent } from './types/input.component';
 import { FormlyFieldSelectComponent } from './types/select.component';
 import { FormlyFieldTextareaComponent } from './types/textarea-component';
 import { FormlyFieldRadioComponent } from './types/radio.component';
+import { FormlyFieldRadioButtonComponent } from './types/radio-button.component';
 import { FormlyFieldSwitchComponent } from './types/switch.component';
 import { FormlyFieldSliderComponent } from './types/slider.component';
+import { FormlyFieldTabsComponent } from './types/tabs.component';
 
 const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldCheckboxComponent,
@@ -29,8 +34,10 @@ const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldSelectComponent,
   FormlyFieldTextareaComponent,
   FormlyFieldRadioComponent,
+  FormlyFieldRadioButtonComponent,
   FormlyFieldSwitchComponent,
   FormlyFieldSliderComponent,
+  FormlyFieldTabsComponent,
 ];
 
 const NG_ZORRO_MODULES = [
@@ -41,6 +48,9 @@ const NG_ZORRO_MODULES = [
   NzRadioModule,
   NzSwitchModule,
   NzSliderModule,
+  NzTabsModule,
+  NzLayoutModule,
+  NzFormModule,
 ];
 
 const NG_ZORRO_FORMLY_CONFIG = {
@@ -50,11 +60,14 @@ const NG_ZORRO_FORMLY_CONFIG = {
     { name: 'input', component: FormlyFieldInputComponent, wrappers: ['form-field'] },
     { name: 'textarea', component: FormlyFieldTextareaComponent, wrappers: ['form-field'] },
     { name: 'radio', component: FormlyFieldRadioComponent, wrappers: ['form-field'] },
+    { name: 'radio-button', component: FormlyFieldRadioButtonComponent, wrappers: ['form-field'] },
     { name: 'switch', component: FormlyFieldSwitchComponent, wrappers: ['form-field'] },
     { name: 'slider', component: FormlyFieldSliderComponent, wrappers: ['form-field'] },
+    { name: 'tabs', component: FormlyFieldTabsComponent, },
   ],
   wrappers: [
     { name: 'form-field', component: FormlyWrapperFormFieldComponent },
+    { name: 'form-field-vertical', component: FormlyWrapperFormFieldVerticalComponent },
   ],
 };
 
@@ -62,13 +75,13 @@ const NG_ZORRO_FORMLY_CONFIG = {
   declarations: [
     ...FORMLY_FIELD_COMPONENTS,
     FormlyWrapperFormFieldComponent,
+    FormlyWrapperFormFieldVerticalComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    NzFormModule,
     FormlySelectModule,
     ...NG_ZORRO_MODULES,
     FormlyModule.forRoot(NG_ZORRO_FORMLY_CONFIG),
