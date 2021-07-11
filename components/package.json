@@ -2,7 +2,7 @@
   "name": "ng-uranus-perd",
   "version": "9.3.0",
   "dependencies": {
-    "@ngx-formly/core": "5.10.20",
+    "@ngx-formly/core": "5.10.21",
     "ng-zorro-antd": "^9.3.0"
   },
   "peerDependencies": {

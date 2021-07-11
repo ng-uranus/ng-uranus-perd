@@ -13,6 +13,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzSliderModule } from 'ng-zorro-antd/slider';
+import { NzEmptyModule } from 'ng-zorro-antd/empty';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
@@ -27,6 +28,7 @@ import { FormlyFieldRadioButtonComponent } from './types/radio-button.component'
 import { FormlyFieldSwitchComponent } from './types/switch.component';
 import { FormlyFieldSliderComponent } from './types/slider.component';
 import { FormlyFieldTabsComponent } from './types/tabs.component';
+import { FormlyFieldEmptyComponent } from './types/empty.component';
 
 const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldCheckboxComponent,
@@ -38,6 +40,7 @@ const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldSwitchComponent,
   FormlyFieldSliderComponent,
   FormlyFieldTabsComponent,
+  FormlyFieldEmptyComponent,
 ];
 
 const NG_ZORRO_MODULES = [
@@ -49,12 +52,14 @@ const NG_ZORRO_MODULES = [
   NzSwitchModule,
   NzSliderModule,
   NzTabsModule,
+  NzEmptyModule,
   NzLayoutModule,
   NzFormModule,
 ];
 
 const NG_ZORRO_FORMLY_CONFIG = {
   types: [
+    { name: 'tabs', component: FormlyFieldTabsComponent, },
     { name: 'checkbox', component: FormlyFieldCheckboxComponent, wrappers: ['form-field'] },
     { name: 'select', component: FormlyFieldSelectComponent, wrappers: ['form-field'] },
     { name: 'input', component: FormlyFieldInputComponent, wrappers: ['form-field'] },
@@ -63,7 +68,7 @@ const NG_ZORRO_FORMLY_CONFIG = {
     { name: 'radio-button', component: FormlyFieldRadioButtonComponent, wrappers: ['form-field'] },
     { name: 'switch', component: FormlyFieldSwitchComponent, wrappers: ['form-field'] },
     { name: 'slider', component: FormlyFieldSliderComponent, wrappers: ['form-field'] },
-    { name: 'tabs', component: FormlyFieldTabsComponent, },
+    { name: 'empty', component: FormlyFieldEmptyComponent, wrappers: ['form-field'] },
   ],
   wrappers: [
     { name: 'form-field', component: FormlyWrapperFormFieldComponent },

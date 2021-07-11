@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, ViewChild } from '@angular/core';
 import { NuColumn, NuData } from 'ng-uranus-perd/table';
 import { FormGroup } from '@angular/forms';
 import { FormlyFormOptions, FormlyFieldConfig } from '@ngx-formly/core';
+import { FormlyFieldConfigCache } from '@ngx-formly/core/lib/components/formly.field.config';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,9 @@ import { FormlyFormOptions, FormlyFieldConfig } from '@ngx-formly/core';
 })
 export class AppComponent {
   result: string;
+  @ViewChild('hintStart', { static: true }) hintStart: TemplateRef<any>;
+  @ViewChild('hintEnd', { static: true }) hintEnd: TemplateRef<any>;
+
   // table
   columns: NuColumn[] = [
     {
@@ -43,7 +47,18 @@ export class AppComponent {
   model = {};
   options: FormlyFormOptions = {};
   form = new FormGroup({});
-  fields1: FormlyFieldConfig[] = [{
+  fields: FormlyFieldConfig[] = [{
+    type: 'empty',
+    hooks: {
+      afterViewInit: (field: FormlyFieldConfigCache) => {
+        field.templateOptions.hintStart = this.hintStart;
+        field.templateOptions.hintEnd = this.hintEnd;
+        setTimeout(() => {
+          field.options._markForCheck(field);
+        });
+      },
+    },
+  }, {
     key: 'input',
     type: 'input',
     defaultValue: 'aaa',
@@ -52,6 +67,15 @@ export class AppComponent {
       label: 'Input',
       placeholder: 'please input.',
       required: true,
+    },
+    hooks: {
+      afterViewInit: (field: FormlyFieldConfigCache) => {
+        field.templateOptions.hintStart = this.hintStart;
+        field.templateOptions.hintEnd = this.hintEnd;
+        setTimeout(() => {
+          field.options._markForCheck(field);
+        });
+      },
     },
     validators: {
       required: {
@@ -165,7 +189,7 @@ export class AppComponent {
   ];
 
   // tabs
-  fields: FormlyFieldConfig[] = [{
+  fields1: FormlyFieldConfig[] = [{
     type: 'tabs',
     fieldGroup: [
       {

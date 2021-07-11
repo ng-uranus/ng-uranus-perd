@@ -5,7 +5,8 @@ import { FieldType } from '@ngx-formly/core';
   selector: 'nu-formly-field-tabs',
   preserveWhitespaces: false,
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // TODO
+  // changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <nz-tabset>
       [nzSelectedIndex]="to.nzSelectedIndex"
