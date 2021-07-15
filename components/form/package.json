@@ -15,7 +15,8 @@
         "ng-zorro-antd/slider": "ng-zorro-antd/slider",
         "ng-zorro-antd/empty": "ng-zorro-antd/empty",
         "ng-zorro-antd/tabs": "ng-zorro-antd/tabs",
-        "ng-zorro-antd/layout": "ng-zorro-antd/layout"
+        "ng-zorro-antd/layout": "ng-zorro-antd/layout",
+        "ng-zorro-antd/divider": "ng-zorro-antd/divider"
       }
     }
   }

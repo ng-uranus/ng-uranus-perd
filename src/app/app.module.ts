@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NuTableModule } from 'ng-uranus-perd/table';
 import { NuFormModule } from 'ng-uranus-perd/form';
+import { NuCommonModule } from 'ng-uranus-perd/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     NuTableModule,
     NuFormModule,
+    NuCommonModule,
+    NzIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

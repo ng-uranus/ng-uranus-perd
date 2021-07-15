@@ -16,6 +16,7 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
 import { NzEmptyModule } from 'ng-zorro-antd/empty';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
 
 import { FormlyWrapperFormFieldComponent } from './wrappers/wrapper-form-field.component';
 import { FormlyWrapperFormFieldVerticalComponent } from './wrappers/wrapper-form-field-vertical.component';
@@ -29,6 +30,7 @@ import { FormlyFieldSwitchComponent } from './types/switch.component';
 import { FormlyFieldSliderComponent } from './types/slider.component';
 import { FormlyFieldTabsComponent } from './types/tabs.component';
 import { FormlyFieldEmptyComponent } from './types/empty.component';
+import { FormlyFieldDividerComponent } from './types/divider.component';
 
 const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldCheckboxComponent,
@@ -41,6 +43,7 @@ const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldSliderComponent,
   FormlyFieldTabsComponent,
   FormlyFieldEmptyComponent,
+  FormlyFieldDividerComponent,
 ];
 
 const NG_ZORRO_MODULES = [
@@ -55,6 +58,7 @@ const NG_ZORRO_MODULES = [
   NzEmptyModule,
   NzLayoutModule,
   NzFormModule,
+  NzDividerModule,
 ];
 
 const NG_ZORRO_FORMLY_CONFIG = {
@@ -69,6 +73,7 @@ const NG_ZORRO_FORMLY_CONFIG = {
     { name: 'switch', component: FormlyFieldSwitchComponent, wrappers: ['form-field'] },
     { name: 'slider', component: FormlyFieldSliderComponent, wrappers: ['form-field'] },
     { name: 'empty', component: FormlyFieldEmptyComponent, wrappers: ['form-field'] },
+    { name: 'divider', component: FormlyFieldDividerComponent, wrappers: ['form-field'] },
   ],
   wrappers: [
     { name: 'form-field', component: FormlyWrapperFormFieldComponent },

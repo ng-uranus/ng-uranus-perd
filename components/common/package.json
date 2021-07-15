@@ -1,0 +1,11 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts",
+      "umdModuleIds": {
+        "ng-zorro-antd/tooltip": "ng-zorro-antd/tooltip",
+        "ng-zorro-antd/core/no-animation": "ng-zorro-antd/core/no-animation"
+      }
+    }
+  }
+}
