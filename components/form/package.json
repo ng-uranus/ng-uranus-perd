@@ -16,7 +16,18 @@
         "ng-zorro-antd/empty": "ng-zorro-antd/empty",
         "ng-zorro-antd/tabs": "ng-zorro-antd/tabs",
         "ng-zorro-antd/layout": "ng-zorro-antd/layout",
-        "ng-zorro-antd/divider": "ng-zorro-antd/divider"
+        "ng-zorro-antd/divider": "ng-zorro-antd/divider",
+        "ng-zorro-antd/alert": "ng-zorro-antd/alert",
+        "ng-zorro-antd/rate": "ng-zorro-antd/rate",
+        "ng-zorro-antd/upload": "ng-zorro-antd/upload",
+        "ng-zorro-antd/button": "ng-zorro-antd/button",
+        "ng-zorro-antd/tooltip": "ng-zorro-antd/tooltip",
+        "ng-zorro-antd/tree-select": "ng-zorro-antd/tree-select",
+        "ng-zorro-antd/calendar": "ng-zorro-antd/calendar",
+        "ng-zorro-antd/cascader": "ng-zorro-antd/cascader",
+        "ng-zorro-antd/time-picker": "ng-zorro-antd/time-picker",
+        "ng-zorro-antd/transfer": "ng-zorro-antd/transfer",
+        "ng-zorro-antd/date-picker": "ng-zorro-antd/date-picker"
       }
     }
   }

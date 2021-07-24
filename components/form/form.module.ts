@@ -17,6 +17,17 @@ import { NzEmptyModule } from 'ng-zorro-antd/empty';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzAlertModule } from 'ng-zorro-antd/alert';
+import { NzRateModule } from 'ng-zorro-antd/rate';
+import { NzUploadModule } from 'ng-zorro-antd/upload';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
+import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
+import { NzCalendarModule } from 'ng-zorro-antd/calendar';
+import { NzCascaderModule } from 'ng-zorro-antd/cascader';
+import { NzTimePickerModule } from 'ng-zorro-antd/time-picker';
+import { NzTransferModule } from 'ng-zorro-antd/transfer';
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 
 import { FormlyWrapperFormFieldComponent } from './wrappers/wrapper-form-field.component';
 import { FormlyWrapperFormFieldVerticalComponent } from './wrappers/wrapper-form-field-vertical.component';
@@ -31,6 +42,15 @@ import { FormlyFieldSliderComponent } from './types/slider.component';
 import { FormlyFieldTabsComponent } from './types/tabs.component';
 import { FormlyFieldEmptyComponent } from './types/empty.component';
 import { FormlyFieldDividerComponent } from './types/divider.component';
+import { FormlyFieldAlertComponent } from './types/alert.component';
+import { FormlyFieldRateComponent } from './types/rate.component';
+import { FormlyFieldUploadComponent } from './types/upload.component';
+import { FormlyFieldButtonComponent } from './types/button.component';
+import { FormlyFieldTreeSelectComponent } from './types/tree-select.component';
+import { FormlyFieldCascaderComponent } from './types/cascader.component';
+import { FormlyFieldTimePickerComponent } from './types/time-picker.component';
+import { FormlyFieldTransferComponent } from './types/transfer.component';
+import { FormlyFieldDatePickerComponent } from './types/date-picker.component';
 
 const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldCheckboxComponent,
@@ -44,6 +64,15 @@ const FORMLY_FIELD_COMPONENTS = [
   FormlyFieldTabsComponent,
   FormlyFieldEmptyComponent,
   FormlyFieldDividerComponent,
+  FormlyFieldAlertComponent,
+  FormlyFieldRateComponent,
+  FormlyFieldUploadComponent,
+  FormlyFieldButtonComponent,
+  FormlyFieldTreeSelectComponent,
+  FormlyFieldCascaderComponent,
+  FormlyFieldTimePickerComponent,
+  FormlyFieldTransferComponent,
+  FormlyFieldDatePickerComponent,
 ];
 
 const NG_ZORRO_MODULES = [
@@ -59,6 +88,17 @@ const NG_ZORRO_MODULES = [
   NzLayoutModule,
   NzFormModule,
   NzDividerModule,
+  NzAlertModule,
+  NzRateModule,
+  NzUploadModule,
+  NzButtonModule,
+  NzToolTipModule,
+  NzTreeSelectModule,
+  NzCalendarModule,
+  NzCascaderModule,
+  NzTimePickerModule,
+  NzTransferModule,
+  NzDatePickerModule,
 ];
 
 const NG_ZORRO_FORMLY_CONFIG = {
@@ -74,6 +114,17 @@ const NG_ZORRO_FORMLY_CONFIG = {
     { name: 'slider', component: FormlyFieldSliderComponent, wrappers: ['form-field'] },
     { name: 'empty', component: FormlyFieldEmptyComponent, wrappers: ['form-field'] },
     { name: 'divider', component: FormlyFieldDividerComponent, wrappers: ['form-field'] },
+    { name: 'alert', component: FormlyFieldAlertComponent, wrappers: ['form-field'] },
+    { name: 'rate', component: FormlyFieldRateComponent, wrappers: ['form-field'] },
+    { name: 'button', component: FormlyFieldButtonComponent, wrappers: ['form-field'] },
+    { name: 'cascader', component: FormlyFieldCascaderComponent, wrappers: ['form-field'] },
+    { name: 'time-picker', component: FormlyFieldTimePickerComponent, wrappers: ['form-field'] },
+    { name: 'transfer', component: FormlyFieldTransferComponent, wrappers: ['form-field'] },
+    { name: 'date-picker', component: FormlyFieldDatePickerComponent, wrappers: ['form-field'] },
+    // TODO: ng-zorro-antd v10.1.0: https://github.com/NG-ZORRO/ng-zorro-antd/pull/6574
+    // { name: 'tree-select', component: FormlyFieldTreeSelectComponent, wrappers: ['form-field'] },
+    // TODO: ng-zorro-antd v10.1.0: https://github.com/ngx-formly/ngx-formly/issues/2549
+    // { name: 'upload', component: FormlyFieldUploadComponent, wrappers: ['form-field'] },
   ],
   wrappers: [
     { name: 'form-field', component: FormlyWrapperFormFieldComponent },

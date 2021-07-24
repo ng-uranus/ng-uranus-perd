@@ -9,6 +9,10 @@ import { NuCommonModule } from 'ng-uranus-perd/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import zh from '@angular/common/locales/zh';
+import {registerLocaleData} from '@angular/common';
+registerLocaleData(zh);
+
 @NgModule({
   declarations: [
     AppComponent

@@ -113,7 +113,7 @@ export class FormlyFieldSelectComponent extends FieldType {
   }
 
   get nzShowArrow() {
-    return this.to!.nzShowArrow || this.nzMode === 'default';
+    return this.to!.nzShowArrow;
   }
 
   get nzShowSearch() {
